@@ -1,0 +1,13 @@
+{>"layouts/layout"/}
+
+{<mainContent}
+{#SingleTapahtumat}
+  <div class="card">
+    <div class="card-block pb-0">
+      <h4 class="card-title">{@title /}</h4>
+      <p class="card-text"><small class="text-muted">{@strtodate value=Event.fields.alkamisaika format="d.m.Y H:i" /} - {@strtodate value=Event.fields.paattymisaika format="d.m.Y H:i" /}</small></p>
+      <div>{@content /}</div>
+    </div>
+  </div>
+{/SingleTapahtumat}
+{/mainContent}

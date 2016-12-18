@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{WP.language}">
+  <head>
+      <meta charset="utf-8">
+      <title>{WP.name}{WP.title|s}</title>
+      <meta name="description" content="{WP.description}">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      {@wphead /}
+  </head>
+  <body>
+    <div class="container py-1">
+      <header class="mb-2">
+        <h1><a href="{WP.url}">{WP.name}</a></h1>
+      </header>
+
+      {+mainContent/}
+    </div>
+    {@wpfooter /}
+  </body>
+</html>

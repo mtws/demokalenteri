@@ -1,0 +1,27 @@
+{>"layouts/layout"/}
+
+{<mainContent}
+
+{#PageCalendar}
+  <h3>{@title /}</h3>
+
+  <ul class="nav nav-tabs mb-2" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#tulevat" role="tab">Tulevat ja nykyiset</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#kaikki" role="tab">Kaikki</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="tulevat" role="tabpanel">
+      {>"shared/eventlist" eventitems=Events /}
+    </div>
+    <div class="tab-pane" id="kaikki" role="tabpanel">
+      {>"shared/eventlist" eventitems=EventsAll /}
+    </div>
+  </div>
+{/PageCalendar}
+
+{/mainContent}

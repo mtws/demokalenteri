@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Tapahtuma</th>
+      <th>Alkaa</th>
+      <th>Päättyy</th>
+    </tr>
+  </thead>
+  <tbody>
+    {#eventitems}
+    <tr>
+      <td><a href="{permalink}">{post_title}</a></td>
+      <td>{@strtodate value=fields.alkamisaika format="d.m.Y H:i" /}</td>
+      <td>{@strtodate value=fields.paattymisaika format="d.m.Y H:i" /}</td>
+    </tr>
+    {/eventitems}
+  </tbody>
+</table>

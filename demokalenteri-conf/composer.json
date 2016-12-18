@@ -1,0 +1,22 @@
+{
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "johnpbloch/wordpress": "4.7",
+    "devgeniem/dustpress": "*",
+    "devgeniem/dustpress-debugger": "^1.2"
+  },
+  "extra": {
+    "installer-paths": {
+      "../public_html/demokalenteri/app/mu-plugins/{$name}/": ["type:wordpress-muplugin","rarst/wps"],
+      "../public_html/demokalenteri/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "../public_html/demokalenteri/app/themes/{$name}": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "../public_html/demokalenteri/wp"
+  }
+}
